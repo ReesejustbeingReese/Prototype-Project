@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time to Book | Visit Taniti</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <div class="logo">
+        <h1>🌴 Visit Taniti</h1>
+    </div>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="entertainment.html">Things To Do</a></li>
+            <li><a href="dining.html">Dining</a></li>
+            <li><a href="lodging.html">Lodging</a></li>
+            <li><a href="transportation.html">Transportation</a></li>
+            <li><a href="faq.html">Travel Info</a></li>
+            <li><a href="timetobook.html" class="active">Book Now</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="page-banner">
+    <h2>Book Your Taniti Adventure</h2>
+    <p>
+        You're just a few steps away from experiencing the beauty, adventure,
+        and relaxation that Taniti has to offer.
+    </p>
+</section>
+
+<section class="booking-info">
+
+    <h2>Vacation Reservation Request</h2>
+
+    <p>
+        Complete the form below and one of our travel specialists will contact
+        you to help plan your perfect island getaway.
+    </p>
+
+</section>
+
+<section class="booking-form">
+
+<form id="bookingForm">
+
+    <label for="firstName">First Name</label>
+    <input
+        type="text"
+        id="firstName"
+        name="firstName"
+        placeholder="Enter your first name"
+        required>
+
+    <label for="lastName">Last Name</label>
+    <input
+        type="text"
+        id="lastName"
+        name="lastName"
+        placeholder="Enter your last name"
+        required>
+
+    <label for="email">Email Address</label>
+    <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="Enter your email"
+        required>
+
+    <label for="phone">Phone Number</label>
+    <input
+        type="tel"
+        id="phone"
+        name="phone"
+        placeholder="(555) 555-5555">
+
+    <label for="arrival">Arrival Date</label>
+    <input
+        type="date"
+        id="arrival"
+        name="arrival"
+        required>
+
+    <label for="departure">Departure Date</label>
+    <input
+        type="date"
+        id="departure"
+        name="departure"
+        required>
+
+    <label for="guests">Number of Guests</label>
+    <select id="guests" name="guests">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5+</option>
+    </select>
+
+    <label for="lodging">Preferred Lodging</label>
+    <select id="lodging" name="lodging">
+        <option>Four-Star Resort</option>
+        <option>Family-Owned Hotel</option>
+        <option>Bed & Breakfast</option>
+        <option>Budget Hostel</option>
+        <option>No Preference</option>
+    </select>
+
+    <label for="activities">Activities of Interest</label>
+
+    <div class="checkbox-group">
+
+        <label><input type="checkbox"> Beaches</label>
+
+        <label><input type="checkbox"> Rainforest Hiking</label>
+
+        <label><input type="checkbox"> Snorkeling</label>
+
+        <label><input type="checkbox"> Volcano Tour</label>
+
+        <label><input type="checkbox"> Fishing Charter</label>
+
+        <label><input type="checkbox"> Helicopter Tour</label>
+
+        <label><input type="checkbox"> Golf</label>
+
+        <label><input type="checkbox"> Museum</label>
+
+    </div>
+
+    <label for="comments">Special Requests</label>
+
+    <textarea
+        id="comments"
+        name="comments"
+        rows="5"
+        placeholder="Tell us about your trip..."></textarea>
+
+    <button type="submit" class="btn">
+        Submit Reservation Request
+    </button>
+
+</form>
+
+</section>
+
+<section class="booking-benefits">
+
+<h2>Why Book With Visit Taniti?</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>🏝 Personalized Planning</h3>
+<p>Receive customized travel recommendations from local experts.</p>
+</div>
+
+<div class="card">
+<h3>🏨 Trusted Lodging</h3>
+<p>Choose from government-inspected hotels, resorts, and bed & breakfasts.</p>
+</div>
+
+<div class="card">
+<h3>🌋 Adventure Packages</h3>
+<p>Bundle popular attractions and activities into one unforgettable vacation.</p>
+</div>
+
+<div class="card">
+<h3>☎ Local Support</h3>
+<p>Friendly visitor services are available before and during your trip.</p>
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>
+© 2026 Visit Taniti | WGU D479 Interactive Prototype
+</p>
+
+</footer>
+
+<script>
+document.getElementById("bookingForm").addEventListener("submit", function(event) {
+    event.preventDefault();
+    alert("Thank you for your reservation request! A Taniti travel specialist will contact you soon.");
+});
+</script>
+
+</body>
+</html>
